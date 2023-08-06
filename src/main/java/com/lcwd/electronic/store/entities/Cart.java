@@ -15,7 +15,6 @@ import java.util.List;
 @Entity
 @Table(name = "cart")
 public class Cart {
-
     @Id
     private String cartId;
     private Date createdAt;

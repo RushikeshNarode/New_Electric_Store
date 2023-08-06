@@ -17,7 +17,6 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class CartItemDto {
-
     private int cartItemId;
     private ProductDto product;
     private int quantity;

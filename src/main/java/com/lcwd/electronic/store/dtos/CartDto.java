@@ -12,7 +12,6 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class CartDto {
-
     private String cartId;
     private Date createdAt;
     private UserDto user;

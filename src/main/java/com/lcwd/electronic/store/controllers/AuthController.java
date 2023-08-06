@@ -124,7 +124,6 @@ public class AuthController {
         User user = null;
 
         user = userService.findUserByEmailOptional(email).orElse(null);
-
         if (user == null) {
             //create new user
             user = this.saveUser(email, data.get("name").toString(), data.get("photoUrl").toString());
@@ -136,7 +135,6 @@ public class AuthController {
     }
 
     private User saveUser(String email, String name, String photoUrl) {
-
         UserDto newUser = UserDto.builder()
                 .name(name)
                 .email(email)

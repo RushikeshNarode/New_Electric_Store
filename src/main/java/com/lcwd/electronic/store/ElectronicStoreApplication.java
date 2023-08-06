@@ -48,6 +48,7 @@ public class ElectronicStoreApplication implements CommandLineRunner {
             Role role_normal = Role.builder().roleId(role_normal_id).roleName("ROLE_NORMAL").build();
 
 
+
             User adminUser = User.builder()
                     .name("admin")
                     .email("admin@gmail.com")
