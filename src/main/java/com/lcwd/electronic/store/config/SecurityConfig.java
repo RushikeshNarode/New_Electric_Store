@@ -94,7 +94,7 @@ public class SecurityConfig {
         http.csrf()
                 .disable()
                 .authorizeRequests()
-                .antMatchers("/auth/login")
+                .antMatchers("/auth/login","/cloudinary/upload")
                 .permitAll()
                 .antMatchers("/auth/google")
                 .permitAll()
