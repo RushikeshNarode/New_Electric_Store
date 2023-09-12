@@ -1,7 +1,7 @@
 package com.lcwd.electronic.store.dtos;
 
 
-import io.swagger.annotations.ApiModelProperty;
+
 import lombok.*;
 
 @Getter

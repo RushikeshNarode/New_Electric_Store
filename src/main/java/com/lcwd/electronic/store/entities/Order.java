@@ -2,7 +2,7 @@ package com.lcwd.electronic.store.entities;
 
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -40,6 +40,9 @@ public class Order {
     private Date orderedDate;
 
     private Date deliveredDate;
+
+    private  String razoryPayOrderId;
+    private String paymentId;
 
     //user
     @ManyToOne(fetch = FetchType.EAGER)

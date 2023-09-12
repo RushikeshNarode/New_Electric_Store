@@ -36,7 +36,6 @@ public class ElectronicStoreApplication implements CommandLineRunner {
     private UserRepository userRepository;
 
 
-
     @Override
     public void run(String... args) throws Exception {
 
@@ -46,7 +45,6 @@ public class ElectronicStoreApplication implements CommandLineRunner {
 
             Role role_admin = Role.builder().roleId(role_admin_id).roleName("ROLE_ADMIN").build();
             Role role_normal = Role.builder().roleId(role_normal_id).roleName("ROLE_NORMAL").build();
-
 
 
             User adminUser = User.builder()
@@ -79,7 +77,8 @@ public class ElectronicStoreApplication implements CommandLineRunner {
             userRepository.save(normalUser);
 
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
 
